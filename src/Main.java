@@ -2,25 +2,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("ООП");
-        Hogwarts[] students = new Hogwarts[]{
-                new Hogwarts("Гарри", "Поттер", 98, 74),
-                new Hogwarts("Гермиона", "Грейнджер",76, 62),
-                new Hogwarts("Рон", "Уизли",58, 31),
-                new Hogwarts("Драко", "Малфой",45, 16),
-                new Hogwarts("Грэхэм", "Монтегю",24, 48),
-                new Hogwarts("Грегори", "Гойл",89, 63),
-                new Hogwarts("Захария", "Смит",61, 33),
-                new Hogwarts("Седрик", "Диггори",22, 12),
-                new Hogwarts("Джастин", "Финч-Флетчли",71, 85),
-                new Hogwarts("Чжоу", "Чанг",37, 28),
-                new Hogwarts("Падма", "Патил",100, 1),
-                new Hogwarts("Маркус", "Белби",12, 54),
-        };
 
         Gryffindor[] gryffindors = {
-                new Gryffindor("Гарри", "Поттер",98, 74, 35, 87,31),
-                new Gryffindor("Гермиона", "Грейнджер",76, 62, 48,99,73),
+                new Gryffindor("Гарри", "Поттер",98, 74, 35, 100,31),
+                new Gryffindor("Гермиона", "Грейнджер",76, 62, 35,31,87),
                 new Gryffindor("Рон", "Уизли",58, 31,9,11,65),
         };
         Hufflepuff[] hufflepuffs = {
@@ -40,8 +25,12 @@ public class Main {
         };
         Tasks printService = new Tasks();
         printService.print(gryffindors);
+        Tasks.compareGryffindors(gryffindors);
         printService.print(hufflepuffs);
+        Tasks.compareНufflepuffs(hufflepuffs);
         printService.print(ravenclaws);
+        Tasks.compareRavenclaws(ravenclaws);
         printService.print(slytherins);
+        Tasks.compareSlytherins(slytherins);
     }
 }
