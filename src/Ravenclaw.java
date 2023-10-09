@@ -54,4 +54,9 @@ public class Ravenclaw extends Hogwarts {
     public void setCreation(int creation) {
         this.creation = creation;
     }
+
+    @Override
+    protected int getSpecsSum() {
+        return cleverness + wisdom + wittiness + creation;
+    }
 }

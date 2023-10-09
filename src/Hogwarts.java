@@ -4,6 +4,8 @@ public abstract class Hogwarts {
     private int magic;
     private int transgression;
 
+    protected abstract int getSpecsSum();
+
     public void setName(String name) {
         this.name = name;
     }
@@ -41,5 +43,13 @@ public abstract class Hogwarts {
         this.surname = surname;
         this.magic = magic;
         this.transgression = transgression;
+    }
+    private int getBasicSpecsSum() {
+        return magic + transgression;
+
+    }
+    public void basicCompare(Hogwarts hogwarts) {
+        int basicSpecsSum1 = getBasicSpecsSum();
+        int basicSpecsSum2 = hogwarts.getBasicSpecsSum();
     }
 }

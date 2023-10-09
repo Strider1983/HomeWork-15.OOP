@@ -42,4 +42,9 @@ public class Gryffindor extends Hogwarts {
     public int getBravery() {
         return bravery;
     }
+
+    @Override
+    protected int getSpecsSum() {
+        return nobility + honour + bravery;
+    }
 }

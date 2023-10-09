@@ -65,4 +65,9 @@ public class Slytherin extends Hogwarts{
         this.resourcefulness = resourcefulness;
         this.lustForPower = lustForPower;
     }
+
+    @Override
+    protected int getSpecsSum() {
+        return cunning + resoluteness + resourcefulness + ambition + lustForPower;
+    }
 }

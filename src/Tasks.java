@@ -79,4 +79,15 @@ public class Tasks {
             System.out.println("Студенты Слизерина " + slytherins[0].getName() + " " + slytherins[0].getSurname() + " и " + slytherins[1].getName() + " " + slytherins[1].getSurname() + " - равные");
         }
     }
+    public static void compareStudents(Gryffindor[] gryffindors, Hufflepuff[] hufflepuffs, Ravenclaw[] ravenclaw, Slytherin[] slytherins) {
+        int basicSpecsSum1 = slytherins[0].getMagic() + slytherins[0].getTransgression();
+        int basicSpecsSum2 = hufflepuffs[2].getMagic() + hufflepuffs[2].getTransgression();
+        if (basicSpecsSum1 > basicSpecsSum2) {
+            System.out.println(slytherins[0].getName() + " " + slytherins[0].getSurname() + " сильнее чем " + hufflepuffs[2].getName() + " " + hufflepuffs[2].getSurname());
+        } else if (basicSpecsSum1 < basicSpecsSum2) {
+            System.out.println(hufflepuffs[2].getName() + " " + hufflepuffs[2].getSurname() + " сильнее чем " + slytherins[0].getName() + " " + slytherins[0].getSurname());
+        } else {
+            System.out.println(slytherins[0].getName() + " " + slytherins[0].getSurname() + " и " + hufflepuffs[2].getName() + " " + hufflepuffs[2].getSurname() + " - равны по силе");
+        }
+    }
 }

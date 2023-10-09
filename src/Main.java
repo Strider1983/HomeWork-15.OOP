@@ -32,5 +32,7 @@ public class Main {
         Tasks.compareRavenclaws(ravenclaws);
         printService.print(slytherins);
         Tasks.compareSlytherins(slytherins);
+        System.out.println("-----------------------------------------");
+        Tasks.compareStudents(gryffindors, hufflepuffs, ravenclaws, slytherins);
     }
 }

@@ -43,4 +43,9 @@ public class Hufflepuff extends Hogwarts{
         this.loyalty = loyalty;
         this.honesty = honesty;
     }
+
+    @Override
+    protected int getSpecsSum() {
+        return hardWork + loyalty + honesty;
+    }
 }
