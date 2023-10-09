@@ -1,13 +1,43 @@
 public class Hufflepuff extends Hogwarts{
-    private String name;
-    private String surname;
-    private int magic;
-    private int transgression;
     private int hardWork;
     private int loyalty;
     private int honesty;
 
-    public Hufflepuff(String name, String surname, String magic, String transgression, String hardWork, String loyalty, String honesty) {
+    @Override
+    public String toString() {
+        return getName() + " " + getSurname() +
+                ", Магия: " + getMagic() +
+                ", Трансгрессия: " + getTransgression() +
+                ", Трудолюбие: " + hardWork +
+                ", Верность: " + loyalty +
+                ", Честность: " + honesty;
+    }
+
+    public int getHardWork() {
+        return hardWork;
+    }
+
+    public void setHardWork(int hardWork) {
+        this.hardWork = hardWork;
+    }
+
+    public int getLoyalty() {
+        return loyalty;
+    }
+
+    public void setLoyalty(int loyalty) {
+        this.loyalty = loyalty;
+    }
+
+    public int getHonesty() {
+        return honesty;
+    }
+
+    public void setHonesty(int honesty) {
+        this.honesty = honesty;
+    }
+
+    public Hufflepuff(String name, String surname, int magic, int transgression, int hardWork, int loyalty, int honesty) {
         super(name, surname, magic, transgression);
         this.hardWork = hardWork;
         this.loyalty = loyalty;
